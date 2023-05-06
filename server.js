@@ -1,7 +1,6 @@
-const express = require("express");
+const app = require("./app");
 const http = require("http");
 
-const app = express();
 const port = process.env.PORT || "3200";
 
 const onError = error => {
@@ -22,10 +21,6 @@ const onError = error => {
             throw error;
     }
 };
-
-app.get('/', function (req, res) {
-    res.send("Hello from server");
-});
 
 app.set("port", port);
 
