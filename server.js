@@ -2,7 +2,7 @@ const express = require("express");
 const http = require("http");
 
 const app = express();
-const port = 3200;
+const port = process.env.PORT || "3200";
 
 const onError = error => {
     if (error.syscall !== "listen") {
