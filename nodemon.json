@@ -1,0 +1,7 @@
+{
+  "env": {
+    "PORT": 3200,
+    "MONGO_ATLAS_USER_NAME": "replace_with_your_mongo_user_name",
+    "MONGO_ATLAS_PW": "replace_with_your_mongo_password"
+  }
+}
