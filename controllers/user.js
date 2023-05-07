@@ -60,3 +60,25 @@ exports.updateUserAllDetails = (req, res, next) => {
       });
     });
 }
+
+exports.updateUserSpecificDetails = (req, res, next) => {
+  const user = new User({
+    _id: req.params.id,
+    password: req.body.password
+  });
+  User.updateOne({ _id: req.params.id}, user)
+    .then(result => {
+      if(result.modifiedCount == 0 && result.matchedCount > 0){
+        res.status(200).json({ message: "Oops! Nothing to update" });
+      } else if (result.modifiedCount == 1) {
+        res.status(200).json({ message: "Update successful!" });
+      } else {
+        res.status(401).json({ message: "Not authorized!" });
+      }
+    })
+    .catch(error => {
+      res.status(500).json({
+        message: "Couldn't udpate user details!"
+      });
+    });
+}
