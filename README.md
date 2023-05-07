@@ -6,24 +6,36 @@ Build REST API With NodeJs, ExpressJs And MongoDB With the example of all HTTP m
  - CRUD REST API using Node | Express | MongoDB
 
 # Project Setup
-**Step 1:** clone the project: ``` git clone https://github.com/SrikrushnaP/rest-api-using-node-mongo.git```
+**Step 1:** clone the project: 
+   
+         git clone https://github.com/SrikrushnaP/rest-api-using-node-mongo.git
 
-**Step 2:** ``` cd rest-api-using-node-mongo ```
+**Step 2:** change directory to ``` rest-api-using-node-mongo ```
 
- **Step 3:** ``` git pull origin main ``` 
+         cd rest-api-using-node-mongo
+
+ **Step 3:** Fetches updated code from the main branch 
+ 
+         git pull origin main
 
 **Step 4:** Install Node form  https://nodejs.org/en/
 
-**Step 5:** ``` npm install ```
+**Step 5:** insall all node module with all dependencies
 
-**Step 6:** ``` npm run start:dev-server ```
+         npm install
+
+**Step 6:** Update the [MongoDB](https://cloud.mongodb.com/v2/6411a0dc8939fb1fa1e0df22#/clusters) ``` user name ``` and ``` password ``` in the [nodemon.json](https://github.com/SrikrushnaP/rest-api-using-node-mongo/blob/main/nodemon.json) file
+
+**Step 7:** It's time to start the local server
+
+         npm run start:dev-server
 
 Now you can ready to go 
 
-**Step 7:** Open your browser and   type:
-        **7.1:** http://localhost:3200 (You see a message "Hello from server")
-        **7.2:** http://localhost:3200/api/user (You will see all user data(if availabe) from your db) 
-        **7.3:** Download and Install postman form  https://www.postman.com/downloads/ and check other api (POST, PUT, PATCH, DELETE)
+**Step 8:** Open your browser and   type:
+ - **8.1:** http://localhost:3200 (You see a message "Hello from server")
+ - **8.2:** http://localhost:3200/api/user (You will see all user data(if availabe) from your db) 
+ - **8.3:** Download and Install postman form  https://www.postman.com/downloads/ and check other api (POST, PUT, PATCH, DELETE)
 
 # API Documentation (Using postman): 
 https://documenter.getpostman.com/view/10413335/2s93eYUBmB
