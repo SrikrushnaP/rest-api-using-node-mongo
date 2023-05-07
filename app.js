@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const userRoutes = require("./routes/user");
 
 const app = express();
 
@@ -20,5 +21,7 @@ mongoose
 app.get('/', function (req, res) {
     res.send("Hello from server");
 });
+
+app.use("/api/user", userRoutes);
 
 module.exports = app;
